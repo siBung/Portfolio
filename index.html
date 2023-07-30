@@ -14,7 +14,6 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-      <section id="home" class="home container" section>
       <div class="container">
         <a class="navbar-brand fs-4 fw-bold" href="#">John Doe</a>
         <button
@@ -44,14 +43,20 @@
       </div>
     </nav>
     <section id="home" class="home container">
-      <div class="row">
+      <div class="row d-flex align-items-center">
         <div class="col-8">
-            <h3>Hi! I am</h3>2
-            <h1>John Doe</h1>
-            <p>I am Software Engeneer base in Indonesia</p>
-            <a href="images/potrait.png" download>Resume</a>
+          <h3 class="fw-semibold">Hi! I am</h3>
+          <h1 class="fw-bold">John Doe</h1>
+          <p>I am Sofware Engeneer base in Indonesia</p>
+          <a class="btn button" href="Image/potrait.png" download>Resume</a>
         </div>
-
+        <div class="col-4">
+          <img src="Image/potrait.png" alt="potrait" />
+        </div>
+      </div>
+      <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
+        <a class="text-decoration-none text-dark" href="#About">More Info</a>
+        <img id="arrow" class="mt-2" src="Image/arrow.svg" alt="arrow" />
       </div>
     </section>
     <script
