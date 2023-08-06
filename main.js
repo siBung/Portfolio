@@ -12,3 +12,24 @@ function toggleDetail(e) {
 
   $(detail).slideToggle();
 }
+
+// VALIDASI FORM
+function onFormSubmit(e) {
+  e.preventDefault();
+  const email = $("#inp_email");
+  const subject = $("#inp_subject");
+  const masage = $("#inp_masage");
+
+  if (!$(email).val()) {
+    alert("Email is required");
+  } else if (!$(subject).val()) {
+    alert("Subject is required");
+  } else if (!$(masage).val()) {
+    alert("Masage is required");
+  } else {
+    $(email).val("");
+    $(subject).val("");
+    $(masage).val("");
+    alert("Form Submitted");
+  }
+}

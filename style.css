@@ -101,6 +101,14 @@ section::before {
   grid-area: work-1;
 }
 
+#work-2 {
+  grid-area: work-2;
+}
+
+#work-3 {
+  grid-area: work-3;
+}
+
 #work-1:hover::after {
   content: "Web Project";
 }
@@ -112,12 +120,21 @@ section::before {
   content: "Data Base";
 }
 
-#work-2 {
-  grid-area: work-2;
+.contact {
+  padding-bottom: 128px;
 }
 
-#work-3 {
-  grid-area: work-3;
+.contact::before {
+  content: "Contact";
+}
+
+.contact-form {
+  border: solid black;
+  padding: 64px 32px;
+}
+
+.form-label {
+  font-weight: 700;
 }
 
 @keyframes upDown {
