@@ -40,6 +40,10 @@ section::before {
   font-size: 68px;
 }
 
+.home img {
+  width: 100%;
+}
+
 #arrow {
   animation: 2s upDown infinite;
 }
@@ -135,6 +139,19 @@ section::before {
 
 .form-label {
   font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .home img {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  section::before {
+    left: -10px;
+    font-size: 64px;
+  }
 }
 
 @keyframes upDown {
