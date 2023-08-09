@@ -44,6 +44,10 @@ section::before {
   width: 100%;
 }
 
+.home .arrow img {
+  width: 60px;
+}
+
 #arrow {
   animation: 2s upDown infinite;
 }
